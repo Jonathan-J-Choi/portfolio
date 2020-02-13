@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello! My name is . . . </title>
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!--==============-->
+  <!-- Hero Element -->
+  <section class="hero is-light is-medium">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+              Jonathan Choi
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Hello, my name is Jonathan Choi
+        </h1>
+        <h2 class="subtitle">
+          Full Stack Web Developer
+        </h2>
+      </div>
+    </div>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs">
+        <div class="container">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!--==========-->
+  <!-- About Me -->
+  <br><br>
+  <div class="container" id="about">
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box">
+          <figure class="image is-square">
+            <img src="assets/me.jpg">
+          </figure>
+        </div>
+        <div class="tile is-child box">
+          <p class="title">Full stack web developer</p>
+          <p>Currently attending George Washington University's coding boot camp.</p>
+          <p>Graduating March 13th, 2020</p>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <p class="title">A little about me</p>
+          <p>Born and raised in Virginia, I am a graduate of George Mason University with a Bachelor's of Science in
+            Public Health. Having worked in a variety of fields, from butcher's assistant to specimen management
+            technician, I am now pursuing a career in web development. Having always had a passion for building model
+            kits as a child and as an adult, web design was a perfect fit for my tendencies of fiddling and fitting
+            various pieces
+            together. After hearing about the GWU Bootcamp from a coworker, I decided to take the leap of faith. Having
+            completed the first week of classes, I am really enjoying the program and really proud the progress that I
+            have been making having had no prior experience with web development.</p>
+          <br>
+          <p>The correlation between web design and my hobbies has been eye opening. I have always had an interest in
+            computers, but my interest had been surface level in regard to the topic of web-surfing and computer games.
+            My father has always been technologically savy and wished to impart onto me the knowledge of building a
+            computer. I built my current desktop as a freshman in college and have been upgrading it incrementally
+            throughout the years. As a child I have always enjoyed fiddling with Legos, plastic model kits, and
+            sculpting. Web design take these interests of mine and gives me the freedom to create from start to finish
+            in a way that I find very engaging and satisfying. As a fledgling web developer, I hope to gain all the
+            experience and absorb all the information within the GWU Bootcamp and becoming both competant and proactive
+            in learning and developing. Thank you for visiting my web page.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--===========-->
+  <!-- Portfolio -->
+  <br><br><br><br>
+  <!-- Row1 -->
+  <div class="container" id="portfolio">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/starXed.gif">
+          <p class="title">StarXed</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/groupproject1">View project via GitHub</a></p>
+          <div class="content">
+            <p>StarXed is a web application developed by myself and three others that offers users a unique experience.
+              Part daily horoscope and part matchmaking service, StarXed matches users based on compatible star signs
+              with picture profiles, distance, and chat functionality. </p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/Liri.gif">
+          <p class="title">Liri</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/liri.github.io">View project via GitHub</a></p>
+          <div class="content">
+            <p>Liri is a node based application which takes user input and display information about movies, concerts,
+              and song information via Spotify API. By utilizing BandsInTown API, Liri is able to take your query of
+              artist and display tour dates and locations. Likewise with the OMDB API and movie information</p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/employee_summary.gif">
+          <p class="title">Employee-Summary</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/employee_summary">View project via GitHub</a></p>
+          <div class="content">
+            <p>Employee-Summary is a node based application which prompts user input via Inquirer. By taking user input,
+              Employee-Summary is able to build a text file with the corresponding information for a Manager to build
+              their project team. Team members that can be added include engineers and interns. Each employee type has
+              individualized inputs relevant to their position.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/karen.gif">
+          <p class="title">Karen</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/planner.github.io">View project via GitHub</a></p>
+          <div class="content">
+            <p>Karen is one of my first web based applications which uses Moment and local storage to provide the user
+              with a personalized daily planner. Moment is used to provide a realtime clock which changes colors of
+              events in the past [grey], current [red], and future [green]. Users are able to view their daily schedule
+              and save notes to the corresponding hour. At the end of the day users are able to clear their schedule
+              with the click of a button.</p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/portfolio2.gif">
+          <p class="title">First Reactive Portfolio</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/reactive-portfolio.github.io">View project via
+              GitHub</a></p>
+          <div class="content">
+            <p>This web page is built using BootStrap and is my first reactive web page. It features a rotating carousel
+              of photos that I have taken as well as separate pages for a bio, contact, and portfolio. As this project
+              was made at the beginning of my web development career there is only a single project on the portfolio
+              page.</p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <img src="assets/portfolio1.gif">
+          <p class="title">My First Web Page</p>
+          <p class="subtitle"><a href="https://github.com/MrBachChoi/portfolio.github.io">View project via GitHub</a>
+          </p>
+          <div class="content">
+            <p>This is the first web page that I have made. It uses basic HTML and CSS. A contact me page and portfolio
+              are also coded. The portfolio only holds photos that I have taken instead of any projects.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <!-- <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title">Project Name</p>
+        <p class="subtitle">github link</p>
+        <div class="content">
+          <p>description here</p>
+        </div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title">Project Name</p>
+        <p class="subtitle">github link</p>
+        <div class="content">
+          <p>description here</p>
+        </div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box">
+        <p class="title">Project Name</p>
+        <p class="subtitle">github link</p>
+        <div class="content">
+          <p>description here</p>
+        </div>
+      </article>
+    </div>-->
+  </div>
+
+  <!--=================-->
+  <!-- Contact me form -->
+  <br><br>
+  <section class="section" id="contact">
+    <div class="container">
+      <h1 class="title">
+        Contact me
+      </h1>
+
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Email input" value="hello@email.com">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========-->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><strong>Jonathan Choi</strong></p>
+      <p>Visit me here</p>
+      <p>
+        <!-- Social media links -->
+        <span class="icon">
+          <a href="https://www.github.com/mrbachchoi/" target="_blank"><i class="fab fa-github"></i></a>
+        </span>
+        <span class="icon">
+          <a href="https://www.linkedin.com/in/jonathan-choi-036732137/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+        </span>
+        <span class="icon">
+          <a href="mailto:jonathan.junghoon.choi@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
+        </span>
+        <span class="icon">
+          <a href="https://www.facebook.com/MrBachChoi" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </span>
+        <span class="icon">
+          <a href="https://www.instagram.com/mrbachchoi/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </span>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

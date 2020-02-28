@@ -306,13 +306,13 @@
           <div class="field">
             <label class="label" for="full-name">Name</label>
             <div class="control">
-              <input class="input" name="name" id="full-name" type="text" placeholder="First and last name">
+              <input class="input" name="name" id="full-name" type="text" placeholder="First and last name" required>
             </div>
           </div>
           <div class="field">
             <label class="label" for="email-address">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" value="">
+              <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" value="" required>
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -321,13 +321,13 @@
           <div class="field">
             <label class="label">Subject</label>
             <div class="control">
-              <input class="input" type="subject" name="_subject" id="email-subject" placeholder="Please input the subject matter of your inquiry here">
+              <input class="input" type="subject" name="_subject" id="email-subject" placeholder="Please input the subject matter of your inquiry here" required>
             </div>
           </div>
           <div class="field">
             <label for="message" class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" name="message" id="message" placeholder="How may I be of assistance today?"></textarea>
+              <textarea class="textarea" name="message" id="message" placeholder="How may I be of assistance today?" required></textarea>
             </div>
           </div>
         </fieldset>

@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" 
+      type="image/png" 
+      href="assets/favicon.png">
   <title>Hello! My name is . . . </title>
   <!-- Bulma -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -13,26 +16,65 @@
 </head>
 
 <body>
-  <!--==============-->
-  <!-- Hero Element -->
-  <!-- ============ -->
-  <section class="hero is-light is-medium">
-    <!-- Hero head: will stick at the top -->
-    <div class="hero-head">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="index.html">
-              Jonathan Choi
+  <!-- ====== -->
+  <!-- NavBar -->
+  <!-- ====== -->
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/logo.png" width="25" height="25">
+      </a>
+    </div>
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#top">
+          Home
+        </a>
+  
+        <a class="navbar-item" href="#about">
+          About me
+        </a>
+
+        <a class="navbar-item" href="#portfolio">
+          My portfolio
+        </a>
+
+        <a class="navbar-item" href="#contact">
+          Contact me
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/Jonathan-J-Choi">
+              GitHub
+            </a>
+            <a class="navbar-item" href="https://www.linkedin.com/in/jonathan-j-choi/">
+              LinkedIn
             </a>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--==============-->
+  <!-- Hero Element -->
+  <!-- ============ -->
+  <section class="hero is-danger is-medium" id="top">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
     </div>
 
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
+        <img class="is-250x250" src="assets/logo.png">
         <h1 class="title">
           Hello, my name is Jonathan Choi
         </h1>
@@ -43,7 +85,7 @@
     </div>
 
     <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
+    <div class="hero-foot" id="about">
       <nav class="tabs">
         <div class="container">
           <ul>
@@ -60,7 +102,7 @@
   <!-- About Me -->
   <!-- ======== -->
   <br><br>
-  <div class="container" id="about">
+  <div class="container">
     <div class="tile is-ancestor">
       <div class="tile is-4 is-vertical is-parent">
         <div class="tile is-child box">
@@ -104,8 +146,10 @@
   <!--===========-->
   <!-- Portfolio -->
   <!-- ========= -->
-  <br><br><br><br>
-  <div class="container" id="portfolio">
+  <br><br>
+  <hr id="portfolio">
+  <br><br>
+  <div class="container">
     <div class="has-text-centered">
       <h1 class="title">Most recent projects</h2>
     </div>
@@ -251,6 +295,7 @@
   <!-- Contact me form -->
   <!-- =============== -->
   <br><br>
+  <hr>
   <section class="section" id="contact">
     <div class="container">
       <h1 class="title">
@@ -300,6 +345,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="content has-text-centered">
+      <img src="assets/favicon.png">
       <p><strong>Jonathan Choi</strong></p>
       <p>Visit me here</p>
       <p>
@@ -308,11 +354,8 @@
           <a href="https://www.github.com/jonathan-j-choi/" target="_blank"><i class="fab fa-github"></i></a>
         </span>
         <span class="icon">
-          <a href="https://www.linkedin.com/in/jonathan-choi-036732137/" target="_blank"><i
+          <a href="https://www.linkedin.com/in/jonathan-j-choi/" target="_blank"><i
               class="fab fa-linkedin"></i></a>
-        </span>
-        <span class="icon">
-          <a href="mailto:jonathan.junghoon.choi@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a>
         </span>
         <span class="icon">
           <a href="https://www.facebook.com/MrBachChoi" target="_blank"><i class="fab fa-facebook-f"></i></a>

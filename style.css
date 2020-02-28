@@ -1,3 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
+.footer {
+  background-color: #f23a66;
+}
+.ic {
+  color: white;
+}
+
+.po {
+  color: black;
+}

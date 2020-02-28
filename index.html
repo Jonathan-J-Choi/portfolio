@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" 
-      type="image/png" 
-      href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <title>Hello! My name is . . . </title>
   <!-- Bulma -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -25,13 +23,13 @@
         <img src="assets/logo.png" width="25" height="25">
       </a>
     </div>
-  
+
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item" href="#top">
           Home
         </a>
-  
+
         <a class="navbar-item" href="#about">
           About me
         </a>
@@ -43,12 +41,12 @@
         <a class="navbar-item" href="#contact">
           Contact me
         </a>
-  
+
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             More
           </a>
-  
+
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://github.com/Jonathan-J-Choi">
               GitHub
@@ -85,7 +83,7 @@
     </div>
 
     <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot" id="about">
+    <div class="hero-foot">
       <nav class="tabs">
         <div class="container">
           <ul>
@@ -101,7 +99,8 @@
   <!--==========-->
   <!-- About Me -->
   <!-- ======== -->
-  <br><br>
+  <br id="about"><br><br><br>
+
   <div class="container">
     <div class="tile is-ancestor">
       <div class="tile is-4 is-vertical is-parent">
@@ -146,7 +145,6 @@
   <!--===========-->
   <!-- Portfolio -->
   <!-- ========= -->
-  <br><br>
   <hr id="portfolio">
   <br><br>
   <div class="container">
@@ -168,7 +166,10 @@
             <a class="po" href="https://young-ocean-22570.herokuapp.com/index.html">Heroku</a>
           </p>
           <div class="content">
-            <p>Palssport is intended for the casual traveler or the international business person. Our application gives the user ticket prices and a dozen useful phrases for a specified location. Users are also able to submit potential new languages into our database.  However, these submitted phrases are not available immediately as they must be approved by our team to hold a high level of accountability.</p>
+            <p>Palssport is intended for the casual traveler or the international business person. Our application gives
+              the user ticket prices and a dozen useful phrases for a specified location. Users are also able to submit
+              potential new languages into our database. However, these submitted phrases are not available immediately
+              as they must be approved by our team to hold a high level of accountability.</p>
           </div>
         </article>
       </div>
@@ -237,7 +238,8 @@
         <article class="tile is-child box">
           <img src="assets/portfolio2.gif">
           <p class="title">First Reactive Portfolio</p>
-          <p class="subtitle"><a class="po" href="https://github.com/jonathan-j-choi/reactive-portfolio.github.io">GitHub</a></p>
+          <p class="subtitle"><a class="po"
+              href="https://github.com/jonathan-j-choi/reactive-portfolio.github.io">GitHub</a></p>
           <div class="content">
             <p>This web page is built using BootStrap and is my first reactive web page. It features a rotating carousel
               of photos that I have taken as well as separate pages for a bio, contact, and portfolio. As this project
@@ -297,52 +299,63 @@
   <!--=================-->
   <!-- Contact me form -->
   <!-- =============== -->
+  <br id="contact"><br>
   <br><br>
-  <hr>
-  <section class="section" id="contact">
-    <div class="container">
-      <h1 class="title">
-        Contact me
-      </h1>
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mlennwpr" method="post">
-        <fieldset id="fs-frm-inputs">
-          <div class="field">
-            <label class="label" for="full-name">Name</label>
-            <div class="control">
-              <input class="input" name="name" id="full-name" type="text" placeholder="First and last name" required>
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+
+        <div class="container">
+          <h1 class="title">
+            Contact me
+          </h1>
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mlennwpr"
+            method="post">
+            <fieldset id="fs-frm-inputs">
+              <div class="field">
+                <label class="label" for="full-name">Name</label>
+                <div class="control">
+                  <input class="input" name="name" id="full-name" type="text" placeholder="First and last name"
+                    required>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="email-address">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld"
+                    value="" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                  <input class="input" type="subject" name="_subject" id="email-subject"
+                    placeholder="Please input the subject matter of your inquiry here" required>
+                </div>
+              </div>
+              <div class="field">
+                <label for="message" class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" id="message" placeholder="How may I be of assistance today?"
+                    required></textarea>
+                </div>
+              </div>
+            </fieldset>
+            <br>
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-link is-danger" type="submit">Submit</button>
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label class="label" for="email-address">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" value="" required>
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Subject</label>
-            <div class="control">
-              <input class="input" type="subject" name="_subject" id="email-subject" placeholder="Please input the subject matter of your inquiry here" required>
-            </div>
-          </div>
-          <div class="field">
-            <label for="message" class="label">Message</label>
-            <div class="control">
-              <textarea class="textarea" name="message" id="message" placeholder="How may I be of assistance today?" required></textarea>
-            </div>
-          </div>
-        </fieldset>
-        <br>
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-link is-danger" type="submit">Submit</button>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
-  </section>
+  </div>
+  <br><br>
 
   <!--========-->
   <!-- Footer -->
@@ -364,7 +377,8 @@
           <a class="ic" href="https://www.facebook.com/MrBachChoi" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </span>
         <span class="icon">
-          <a class="ic" href="https://www.instagram.com/mrbachchoi/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="ic" href="https://www.instagram.com/mrbachchoi/" target="_blank"><i
+              class="fab fa-instagram"></i></a>
         </span>
       </p>
     </div>

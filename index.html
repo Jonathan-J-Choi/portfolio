@@ -17,7 +17,7 @@
   <!-- ====== -->
   <!-- NavBar -->
   <!-- ====== -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav id="nav" class="navbar is-fixed-top is-white" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.html">
         <img src="assets/logo.png" width="25" height="25">
@@ -28,7 +28,7 @@
       <a class="navbar-item" aria-hidden="true" href="#contact">Contact Me</a></span>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-menu">
       <div class="navbar-start">
 
         <div class="navbar-item has-dropdown is-hoverable">
@@ -44,6 +44,18 @@
               LinkedIn
             </a>
           </div>
+        </div>
+      </div>
+
+      <!-- Night mode toggle -->
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="darkMode">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
         </div>
       </div>
     </div>
@@ -122,9 +134,8 @@
   <!--===========-->
   <!-- Portfolio -->
   <!-- ========= -->
-  <hr id="portfolio">
   <br><br>
-  <div class="container">
+  <div class="container" id="portfolio">
     <br>
     <!-- Main -->
     <div class="tile is-ancestor has-text-centered">
@@ -132,7 +143,7 @@
         <article class="tile is-child box">
           <div class="has-text-centered">
             <h1 class="title has-text-weight-bold">
-              Most recent project:
+              Featured project:
             </h1>
             <br>
           </div>
@@ -262,13 +273,13 @@
       </div>
       <div class="tile is-parent">
         <article class="tile is-child box">
-          <img src="assets/karen.gif">
-          <p class="title">Karen</p>
+          <img src="assets/circadia.gif">
+          <p class="title">Circadia</p>
           <p class="subtitle">
             <a class="po" target="_blank" href="https://jonathan-j-choi.github.io/planner.github.io/">GitHub Pages</a> /
             <a class="po" target="_blank" href="https://github.com/jonathan-j-choi/planner.github.io">GitHub</a></p>
           <div class="content">
-            <p>Karen is one of my first web based application which uses Moment and local storage to provide the user
+            <p>Circadia is one of my first web based application which uses Moment and local storage to provide the user
               with a personalized daily planner. Moment is used to provide a realtime clock which changes colors of
               events in the past [grey], current [red], and future [green]. Users are able to view their daily schedule
               and save notes to the corresponding hour. At the end of the day users are able to clear their schedule
@@ -360,7 +371,7 @@
             <input type="hidden" name="_next" value="https://jonathanchoi.dev/thanks.html"/>
             <div class="field is-grouped">
               <div class="control">
-                <button class="button is-link is-danger" type="submit">Submit</button>
+                <button class="button is-link is-danger" type="submit" id="formButton">Submit</button>
               </div>
             </div>
           </form>
@@ -372,7 +383,7 @@
 
   <!--========-->
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer footerLight" id="footer">
     <br><br>
     <div class="content has-text-centered has-text-white">
       <img src="assets/favicon.png">
@@ -397,5 +408,9 @@
     </div>
   </footer>
 </body>
-
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

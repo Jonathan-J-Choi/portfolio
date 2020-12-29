@@ -3,7 +3,7 @@ html {
 }
 
 body, nav {
-  transition: background 0.2s linear;
+  transition: background 0.3s linear;
 }
 
 .footerLight {

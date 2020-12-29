@@ -28,6 +28,14 @@ body, nav {
   justify-content: space-between;
   padding:3px;
   position:relative;
+  transform: scale(1.5);
+}
+
+.floating-toggle {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1;
 }
 
 .fa-moon {

@@ -17,7 +17,7 @@
   <!-- ====== -->
   <!-- NavBar -->
   <!-- ====== -->
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav id="nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/index.html">
         <img src="assets/logo.png" width="25" height="25">
@@ -73,10 +73,19 @@
     </div>
   </section>
 
+    <!-- Floating Darkmode Toggle -->
+    <div class="floating-toggle">
+      <input type="checkbox" class="checkbox" id="checkbox">
+      <label for="checkbox" class="darkMode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
   <!--===========-->
   <!-- Thank You -->
   <!-- ========= -->
-  <hr id="portfolio">
   <div class="container">
     <br>
     <div class="tile is-ancestor has-text-centered">
@@ -84,9 +93,9 @@
         <article class="tile is-child box">
           <div class="has-text-centered">
             <br>
-            <h1 class="title has-text-weight-bold">
+            <p class="title has-text-weight-bold">
               Thank you for your submission!
-            </h1>
+            </p>
             <br>
           </div>
           <div class="content">
@@ -103,11 +112,11 @@
 
   <!--========-->
   <!-- Footer -->
-  <footer class="footerLight">
+  <footer class="footerLight" id="footer">
     <br><br>
     <div class="content has-text-centered has-text-white">
       <img src="assets/favicon.png">
-      <p class="has-text-weight-bold">Jonathan Choi</p>
+      <p class="has-text-weight-bold ic">Jonathan Choi</p>
       <p>
         <!-- Social media links -->
         <span class="icon has-text-light">
@@ -128,5 +137,11 @@
     </div>
   </footer>
 </body>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="thanks.js"></script>
 
 </html>

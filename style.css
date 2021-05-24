@@ -104,3 +104,8 @@ body, nav {
   opacity:1;
   cont-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
+
+.featured-dv {
+  max-width: 56.25rem;
+  margin: auto !important;
+}

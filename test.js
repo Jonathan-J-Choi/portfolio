@@ -9,7 +9,7 @@ const rh = document.getElementById("rheight");
 const rw = document.getElementById("rwidth");
 const b = document.getElementById("browser");
 const bv = document.getElementById("browser_version");
-const cdn = document.getElementById("complete_device_name");
+const cn = document.getElementById("complete_n");
 
 console.log(WURFL)
 console.log(WURFL.complete_device_name)
@@ -25,4 +25,4 @@ rh.innerHTML = WURFL.resolution_height;
 rw.innerHTML = WURFL.resolution_width;
 b.innerHTML = WURFL.advertised_browser;
 bv.innerHTML = WURFL.advertised_browser_version;
-cdn.innerHTML = WURFL.complete_device_name;
+cn.innerHTML = WURFL.complete_device_name;

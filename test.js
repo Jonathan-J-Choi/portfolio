@@ -11,9 +11,6 @@ const b = document.getElementById("browser");
 const bv = document.getElementById("browser_version");
 const cn = document.getElementById("complete_n");
 
-console.log(WURFL)
-console.log(WURFL.complete_device_name)
-
 mn.innerHTML = WURFL.marketing_name;
 m.innerHTML = WURFL.model_name;
 bn.innerHTML = WURFL.brand_name;

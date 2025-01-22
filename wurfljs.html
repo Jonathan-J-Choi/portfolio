@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Accept-CH" content="sec-ch-ua-reduced,sec-ch-ua,sec-ch-ua-platform,sec-ch-ua-platform-version,sec-ch-ua-full-version,sec-ch-ua-full-version-list,sec-ch-ua-mobile,sec-ch-ua-model,sec-ch-ua-arch,sec-ch-ua-bitness,sec-ch-ua-wow64" />
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <title>Hello, my name is . . . </title>
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="has-background-light">
+  <!-- ====== -->
+  <!-- NavBar -->
+  <!-- ====== -->
+  <nav id="nav" class="navbar is-fixed-top is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="https://jonathanchoi.cdn.imgeng.in/assets/logo.png" width="25" height="25">
+      </a>
+      <a class="navbar-item" aria-hidden="true" href="#top">Home</a></span>
+      <a class="navbar-item" aria-hidden="true" href="#about">About</a></span>
+      <a class="navbar-item" aria-hidden="true" href="#portfolio">Portfolio</a></span>
+      <a class="navbar-item" aria-hidden="true" href="#contact">Contact Me</a></span>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" target="_blank" href="https://github.com/Jonathan-J-Choi">
+              GitHub
+            </a>
+            <a class="navbar-item" target="_blank" href="https://www.linkedin.com/in/jonathan-j-choi/">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--==============-->
+  <!-- Hero Element -->
+  <!-- ============ -->
+  <section class="hero is-danger is-medium is-bold" id="top">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <br><br><br>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <img src="https://jonathanchoi.cdn.imgeng.in/assets/test_media/test/smlogo.png?imgeng=/w_auto,200">
+        <img src="https://jonathanchoi.cdn.imgeng.in/assets/test_media/test/wautotest.jpg">
+        <h1 class="title">
+          Hello, my name is Jonathan Choi
+        </h1>
+        <h2 class="subtitle">
+          Full Stack Web Developer
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!--==========-->
+  <!-- About Me -->
+  <!-- ======== -->
+  <br>
+
+  <div class="container">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <p class="title has-text-centered">WURFL.js test</p>
+          <div class="has-text-centered">
+            <strong>Device Info:</strong>
+            <p>Complete Device Name: <span id="complete_n"></span></p>
+            <p>Marketing Name: <span id="name"></span></p>
+            <p>Model Name: <span id="model"></span></p>
+            <p>Brand Name: <span id="brand"></span></p>
+            <p>Device OS: <span id="os"></span> <span id="ver"></span></p>
+            <p>Screen Height: <span id="sheight"></span>mm</p>
+            <p>Screem Width: <span id="swidth"></span>mm</p>
+            <p>Resolution Height: <span id="rheight"></span>px</p>
+            <p>Resolution Width: <span id="rwidth"></span>px</p>
+            <br>
+            <strong>Browser Info:</strong>
+            <p>Browser: <span id="browser"></span></p>
+            <p>Browser Version: <span id="browser_version"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!--========-->
+  <!-- Footer -->
+  <footer class="footer footerLight" id="footer">
+    <br><br>
+    <div class="content has-text-centered has-text-white">
+      <img src="https://jonathanchoi.cdn.imgeng.in/assets/favicon.png">
+      <p class="has-text-weight-bold ic">Jonathan Choi</p>
+      <p>
+        <!-- Social media links -->
+        <span class="icon has-text-light">
+          <a class="ic" href="https://www.github.com/jonathan-j-choi/" target="_blank"><i class="fab fa-github"></i></a>
+        </span>
+        <span class="icon">
+          <a class="ic" href="https://www.linkedin.com/in/jonathan-j-choi/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+        </span>
+        <span class="icon">
+          <a class="ic" href="https://www.facebook.com/MrBachChoi" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </span>
+        <span class="icon">
+          <a class="ic" href="https://www.instagram.com/mrbachchoi/" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+        </span>
+      </p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="//wjs.wurflcloud.com/wurfl.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="test.js"></script>
+</html>
